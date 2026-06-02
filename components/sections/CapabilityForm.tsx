@@ -23,12 +23,21 @@ export default function CapabilityForm() {
   const onSubmit = async (data: FormData) => {
     setIsLoading(true);
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      console.log('Form submitted:', data);
-      setSubmitted(true);
-      reset();
-      setTimeout(() => setSubmitted(false), 5000);
+      // Send to email service (FormSubmit, Formspree, etc.)
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        console.log('Form submitted:', data);
+        setSubmitted(true);
+        reset();
+        setTimeout(() => setSubmitted(false), 5000);
+      }
     } catch (error) {
       console.error('Error:', error);
     } finally {
