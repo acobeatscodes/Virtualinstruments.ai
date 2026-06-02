@@ -2,9 +2,14 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Government Contracting | VirtualInstruments.ai',
-  description: 'AI-powered software development, audio innovation, and secure SaaS solutions for federal agencies, defense contractors, and education programs.',
-  keywords: ['government contracting', 'AI software', 'federal agencies', 'audio technology', 'SaaS'],
+  title: 'VirtualInstruments.ai | Government Software & AI Solutions',
+  description: 'Enterprise-grade AI, software development, and audio technology solutions for government agencies, defense contractors, and federal organizations.',
+  keywords: ['government software', 'AI solutions', 'federal contractors', 'audio technology', 'enterprise software'],
+  openGraph: {
+    title: 'VirtualInstruments.ai | Government Software & AI Solutions',
+    description: 'Enterprise-grade AI, software development, and audio technology solutions for government agencies.',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -14,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-white dark:bg-secondary-900 text-secondary-900 dark:text-secondary-50 transition-colors duration-300">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0284c7" />
+      </head>
+      <body className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-300">
         {children}
       </body>
     </html>
