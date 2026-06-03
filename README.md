@@ -90,7 +90,7 @@ Edit `tailwind.config.js` - Modify the blue color palette
 
 ### Update Contact Info
 In `app/page.tsx` footer:
-- Email: gov@virtualinstruments.ai
+- Email: acobeatspublishing@gmail.com
 - Phone: +1 (347) 982-4354
 
 ## 📤 Deployment Options
@@ -120,7 +120,7 @@ In `app/page.tsx` footer:
 
 ## 📞 Contact
 
-**Email**: gov@virtualinstruments.ai  
+**Email**: acobeatspublishing@gmail.com
 **Phone**: +1 (347) 982-4354  
 **Hours**: Monday-Friday, 9AM-6PM EST
 

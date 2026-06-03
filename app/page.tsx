@@ -218,7 +218,7 @@ export default function Home() {
           </div>
 
           <div className="card border border-slate-200 dark:border-slate-800 p-8">
-            <form action="mailto:gov@virtualinstruments.ai" method="post" encType="text/plain" className="space-y-6">
+            <form action="mailto:acobeatspublishing@gmail.com" method="post" encType="text/plain" className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold mb-2 text-slate-900 dark:text-white">Name</label>
@@ -302,8 +302,8 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4 text-white">Contact</h4>
               <div className="space-y-3 text-sm">
-                <a href="mailto:gov@virtualinstruments.ai" className="flex items-center gap-2 text-slate-400 hover:text-blue-400 transition">
-                  <FaEnvelope /> gov@virtualinstruments.ai
+                <a href="mailto:acobeatspublishing@gmail.com" className="flex items-center gap-2 text-slate-400 hover:text-blue-400 transition">
+                  <FaEnvelope /> acobeatspublishing@gmail.com
                 </a>
                 <a href="tel:+1-347-982-4354" className="flex items-center gap-2 text-slate-400 hover:text-blue-400 transition">
                   <FaPhone /> +1 (347) 982-4354
