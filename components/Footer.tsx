@@ -29,8 +29,8 @@ export default function Footer() {
     {
       title: 'Legal',
       links: [
-        { label: 'Privacy Policy', href: 'mailto:acobeatspublishing@gmail.com?subject=Privacy%20Policy%20Request' },
-        { label: 'Terms of Service', href: 'mailto:acobeatspublishing@gmail.com?subject=Terms%20Request' },
+        { label: 'Privacy Policy', href: 'mailto:gov@virtualinstruments.ai?subject=Privacy%20Policy%20Request' },
+        { label: 'Terms of Service', href: 'mailto:gov@virtualinstruments.ai?subject=Terms%20Request' },
         { label: 'Security', href: '#compliance' },
         { label: 'Sitemap', href: '#contact' },
       ],
@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="flex gap-4 mt-6">
               {[
                 { icon: FaGithub, href: 'https://github.com/acobeatscodes/Virtualinstruments.ai', label: 'GitHub repository' },
-                { icon: FaEnvelope, href: 'mailto:acobeatspublishing@gmail.com', label: 'Email VirtualInstruments.ai' },
+                { icon: FaEnvelope, href: 'mailto:gov@virtualinstruments.ai', label: 'Email VirtualInstruments.ai' },
               ].map((social, idx) => {
                 const Icon = social.icon;
                 return (
@@ -114,8 +114,8 @@ export default function Footer() {
               <p className="text-secondary-400 flex items-center gap-2 mb-1">
                 <FaEnvelope size={16} /> Email
               </p>
-              <a href="mailto:acobeatspublishing@gmail.com" className="text-primary-400 hover:text-primary-300 font-semibold">
-                acobeatspublishing@gmail.com
+              <a href="mailto:gov@virtualinstruments.ai" className="text-primary-400 hover:text-primary-300 font-semibold">
+                gov@virtualinstruments.ai
               </a>
             </div>
             <div>

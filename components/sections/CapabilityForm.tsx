@@ -35,7 +35,7 @@ export default function CapabilityForm() {
         data.message || 'No additional message provided.',
       ].join('\n'));
 
-      window.location.href = `mailto:acobeatspublishing@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:gov@virtualinstruments.ai?subject=${subject}&body=${body}`;
       setSubmitted(true);
       reset();
       setTimeout(() => setSubmitted(false), 5000);

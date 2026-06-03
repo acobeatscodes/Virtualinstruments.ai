@@ -179,7 +179,7 @@ npx http-server out
 ## 📞 Support
 
 For questions:
-- Email: acobeatspublishing@gmail.com
+- Email: gov@virtualinstruments.ai
 - Phone: +1 (347) 982-4354
 
 Happy deploying! 🚀
