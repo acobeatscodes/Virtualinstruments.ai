@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,28 +11,28 @@ export default function Footer() {
     {
       title: 'Company',
       links: [
-        { label: 'About Us', href: '#' },
+        { label: 'About Us', href: '#contact' },
         { label: 'Services', href: '#services' },
         { label: 'Industries', href: '#industries' },
-        { label: 'Blog', href: '#' },
+        { label: 'Support', href: '#contact' },
       ],
     },
     {
       title: 'Resources',
       links: [
-        { label: 'Capability Statement', href: '#' },
+        { label: 'Capability Statement', href: '#contact' },
         { label: 'Compliance', href: '#compliance' },
-        { label: 'Documentation', href: '#' },
+        { label: 'Documentation', href: '#services' },
         { label: 'Contact', href: '#contact' },
       ],
     },
     {
       title: 'Legal',
       links: [
-        { label: 'Privacy Policy', href: '#' },
-        { label: 'Terms of Service', href: '#' },
-        { label: 'Security', href: '#' },
-        { label: 'Sitemap', href: '#' },
+        { label: 'Privacy Policy', href: 'mailto:gov@virtualinstruments.ai?subject=Privacy%20Policy%20Request' },
+        { label: 'Terms of Service', href: 'mailto:gov@virtualinstruments.ai?subject=Terms%20Request' },
+        { label: 'Security', href: '#compliance' },
+        { label: 'Sitemap', href: '#contact' },
       ],
     },
   ];
@@ -56,16 +56,15 @@ export default function Footer() {
             </p>
             <div className="flex gap-4 mt-6">
               {[
-                { icon: FaLinkedin, href: '#' },
-                { icon: FaTwitter, href: '#' },
-                { icon: FaGithub, href: '#' },
-                { icon: FaEnvelope, href: 'mailto:gov@virtualinstruments.ai' },
+                { icon: FaGithub, href: 'https://github.com/acobeatscodes/Virtualinstruments.ai', label: 'GitHub repository' },
+                { icon: FaEnvelope, href: 'mailto:gov@virtualinstruments.ai', label: 'Email VirtualInstruments.ai' },
               ].map((social, idx) => {
                 const Icon = social.icon;
                 return (
                   <motion.a
                     key={idx}
                     href={social.href}
+                    aria-label={social.label}
                     whileHover={{ scale: 1.2 }}
                     className="text-secondary-400 hover:text-primary-400 transition-colors duration-300"
                   >

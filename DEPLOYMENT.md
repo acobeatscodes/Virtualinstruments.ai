@@ -39,27 +39,21 @@ This creates an `out/` folder with all static HTML/CSS/JS files.
 
 ### Option 2: GitHub Pages (Free)
 
-#### Step 1: Update next.config.js for GitHub Pages
-```javascript
-// If repo is: github.com/acobeatscodes/Virtualinstruments.ai
-basePath: '/Virtualinstruments.ai',  // Add this line
-```
-
-#### Step 2: Build and deploy
+#### Step 1: Build and deploy
 ```bash
-npm run build
-git add out/
-git commit -m "Deploy to GitHub Pages"
+git add .
+git commit -m "Deploy site"
 git push
 ```
 
-#### Step 3: Enable GitHub Pages
-- GitHub → Settings → Pages
-- Source: main branch
-- Folder: /root or /docs
-- Site: https://acobeatscodes.github.io/Virtualinstruments.ai
+The included GitHub Actions workflow builds the static site and deploys the generated `out/` folder.
 
-#### Step 4: Connect Custom Domain
+#### Step 2: Enable GitHub Pages
+- GitHub → Settings → Pages
+- Source: GitHub Actions
+- Site: https://virtualinstruments.ai
+
+#### Step 3: Connect Custom Domain
 - GoDaddy DNS settings
 - Point CNAME to: acobeatscodes.github.io
 - GitHub → Settings → Pages → Custom domain: virtualinstruments.ai

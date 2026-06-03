@@ -60,10 +60,10 @@ git commit -m "Clean static government website"
 git push origin main
 ```
 
-2. GitHub Settings → Pages → Enable
-3. Select branch: main
-4. Point domain to GitHub
-5. **Live!**
+2. GitHub Settings → Pages
+3. Set Source to GitHub Actions
+4. Wait for the deploy workflow to finish
+5. **Live at virtualinstruments.ai!**
 
 ## 📁 File Structure
 

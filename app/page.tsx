@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaArrowRight, FaCheck, FaShieldAlt, FaBrain, FaMicrophone, FaDatabase, FaLock, FaCube, FaCheckCircle, FaEnvelope, FaPhone, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaArrowRight, FaCheck, FaShieldAlt, FaBrain, FaMicrophone, FaDatabase, FaLock, FaCube, FaCheckCircle, FaEnvelope, FaPhone, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
               <a href="#contact" className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium px-3 py-2 rounded">Contact</a>
             </div>
             <a href="#contact" className="btn-primary text-sm hidden md:block">Get Started</a>
+            <a href="#contact" className="btn-primary text-sm md:hidden px-4 py-2">Contact</a>
           </div>
         </div>
       </nav>
@@ -221,29 +222,29 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold mb-2 text-slate-900 dark:text-white">Name</label>
-                  <input type="text" placeholder="Your name" className="w-full" />
+                  <input type="text" name="name" placeholder="Your name" className="w-full" required />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold mb-2 text-slate-900 dark:text-white">Email</label>
-                  <input type="email" placeholder="your@email.com" className="w-full" />
+                  <input type="email" name="email" placeholder="your@email.com" className="w-full" required />
                 </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold mb-2 text-slate-900 dark:text-white">Company</label>
-                  <input type="text" placeholder="Your organization" className="w-full" />
+                  <input type="text" name="company" placeholder="Your organization" className="w-full" />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold mb-2 text-slate-900 dark:text-white">Phone</label>
-                  <input type="tel" placeholder="(555) 123-4567" className="w-full" />
+                  <input type="tel" name="phone" placeholder="(555) 123-4567" className="w-full" />
                 </div>
               </div>
 
               <div>
                 <label className="block text-sm font-semibold mb-2 text-slate-900 dark:text-white">Industry</label>
-                <select className="w-full">
-                  <option>Select your industry</option>
+                <select name="industry" className="w-full" required>
+                  <option value="">Select your industry</option>
                   <option>Federal Government</option>
                   <option>Defense Contractor</option>
                   <option>Education</option>
@@ -255,7 +256,7 @@ export default function Home() {
 
               <div>
                 <label className="block text-sm font-semibold mb-2 text-slate-900 dark:text-white">Message</label>
-                <textarea placeholder="Tell us about your project..." rows={5} className="w-full"></textarea>
+                <textarea name="message" placeholder="Tell us about your project..." rows={5} className="w-full" required></textarea>
               </div>
 
               <button type="submit" className="w-full btn-primary">Send Message</button>
@@ -292,9 +293,9 @@ export default function Home() {
               <h4 className="font-bold mb-4 text-white">Resources</h4>
               <ul className="space-y-2 text-slate-400 text-sm">
                 <li><a href="#compliance" className="hover:text-blue-400 transition">Compliance</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition">Documentation</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition">Blog</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition">Support</a></li>
+                <li><a href="#solutions" className="hover:text-blue-400 transition">Capabilities</a></li>
+                <li><a href="#industries" className="hover:text-blue-400 transition">Industries</a></li>
+                <li><a href="#contact" className="hover:text-blue-400 transition">Support</a></li>
               </ul>
             </div>
 
@@ -317,9 +318,7 @@ export default function Home() {
                 &copy; {new Date().getFullYear()} VirtualInstruments.ai. All rights reserved.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="text-slate-400 hover:text-blue-400 transition"><FaLinkedin size={18} /></a>
-                <a href="#" className="text-slate-400 hover:text-blue-400 transition"><FaTwitter size={18} /></a>
-                <a href="#" className="text-slate-400 hover:text-blue-400 transition"><FaGithub size={18} /></a>
+                <a href="https://github.com/acobeatscodes/Virtualinstruments.ai" aria-label="VirtualInstruments.ai on GitHub" className="text-slate-400 hover:text-blue-400 transition"><FaGithub size={18} /></a>
               </div>
             </div>
           </div>
