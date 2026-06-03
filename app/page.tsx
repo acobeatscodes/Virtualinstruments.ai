@@ -19,7 +19,7 @@ export default function Home() {
               <a href="#compliance" className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium px-3 py-2 rounded">Compliance</a>
               <a href="#contact" className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium px-3 py-2 rounded">Contact</a>
             </div>
-            <button className="btn-primary text-sm hidden md:block">Get Started</button>
+            <a href="#contact" className="btn-primary text-sm hidden md:block">Get Started</a>
           </div>
         </div>
       </nav>
@@ -58,10 +58,10 @@ export default function Home() {
               </ul>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <button className="btn-primary flex items-center gap-2">
+                <a href="#contact" className="btn-primary flex items-center gap-2">
                   Start Your Project <FaArrowRight />
-                </button>
-                <button className="btn-outline">View Solutions</button>
+                </a>
+                <a href="#solutions" className="btn-outline">View Solutions</a>
               </div>
             </div>
 
@@ -217,7 +217,7 @@ export default function Home() {
           </div>
 
           <div className="card border border-slate-200 dark:border-slate-800 p-8">
-            <form className="space-y-6">
+            <form action="mailto:gov@virtualinstruments.ai" method="post" encType="text/plain" className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold mb-2 text-slate-900 dark:text-white">Name</label>
